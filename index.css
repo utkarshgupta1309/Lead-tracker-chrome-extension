@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 10px;
+  min-width: 400px;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  background-color: #faebefff;
+}
+#gif {
+  display: none;
+  width: 400px;
+  /* height: 100%; */
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  max-height: 100%;
+  opacity: 1;
+  animation: fade 4s linear;
+}
+#icon {
+  width: 25px;
+  height: 25px;
+  padding: 4px;
+  background-color: rgba(51, 62, 121, 0.678);
+  border-radius: 50%;
+}
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+#input-el {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #333d79ff;
+  height: 35px;
+  margin-bottom: 10px;
+  background-color: #faebefff;
+  box-shadow: 2px 2px 2px 2px #8888882d;
+  border-radius: 5px;
+}
+#input-el:focus {
+  outline: none;
+  border: 2px solid #333d79ff;
+}
+#input-btn,
+#save-tab-btn {
+  margin: 5px;
+  margin-left: 0px;
+  padding: 10px;
+  background-color: #333d79ff;
+  color: #faebefff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 7px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+#delete-all-btn {
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 8px;
+  background-color: #faebefff;
+  color: #333d79ff;
+  border: 2px solid #333d79ff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  box-shadow: 2px 2px 2px 2px #8888882d;
+}
+
+ol {
+  list-style: none;
+  padding: 2px;
+}
+
+ol li a {
+  color: #333d79ff;
+  font-size: 13px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 4px;
+}
+#favicon {
+  width: 20px;
+  height: 20px;
+}
